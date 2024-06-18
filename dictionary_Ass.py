@@ -14,11 +14,11 @@ WAP to create a 3 students info in dictionary. Dictionary should contain 3 stude
 ages, roll_nos, classes, sections, percentages, university_names' keys and values can be stored in list/tuple.
 Retrieve the student_3 class from the dictionary.
 """
-student_names={"students":[{"student1":{"student_name":'sai','age':21,'roll_no':403,'section':'A','percentage':62.9,'college_name':"SIET"}},
-                           {"student2":{"student_name":'vasu','age':22,'roll_no':405,'section':'A','percentage':65.6,'college_name':"SIET"}},
-                           {"stduent3":{"student_name":'pavan','age':23,'roll_no':408,'section':'A','percentage':70.5,'college_name':"SIET"}}]}
+student_names={"students":[{"student1":{"student_name":'sai','age':21,'class':['B Com'],'roll_no':403,'section':'A','percentage':62.9,'college_name':"SIET"}},
+                           {"student2":{"student_name":'vasu','age':22,'class':['BCA'],'roll_no':405,'section':'A','percentage':65.6,'college_name':"SIET"}},
+                           {"student3":{"student_name":'pavan','age':23,'class':['Btech'],'roll_no':408,'section':'A','percentage':70.5,'college_name':"SIET"}}]}
 
-print(student_names["students"][-1])
+print(student_names["students"][-1]['student3']['class'])
 """
 Assignment-3:
 WAP to create a 4 employees data in a nested dictionary.
